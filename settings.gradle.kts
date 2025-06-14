@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ComposeWidgetsLib"
 include(":app")
+include(":composecomponents")
