@@ -3,23 +3,16 @@ package com.jyotimoykashyap.composecomponents
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.CornerSize
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Size
@@ -28,9 +21,7 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.addOutline
 import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.LayoutDirection
-import androidx.compose.ui.unit.dp
 
 
 /**
@@ -126,36 +117,5 @@ fun ProgressButton(
             text = text,
             style = MaterialTheme.typography.bodyMedium
         )
-    }
-}
-
-
-@Preview
-@Composable
-private fun ProgressBtnPreview() {
-    Surface(
-        modifier = Modifier
-            .fillMaxSize(),
-    ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            /**
-             * Usage example
-             */
-            ProgressButton(
-                text = "Let's Get Started",
-                onClick = {
-                    println("On Click is triggered")
-                },
-                shape = RoundedCornerShape(corner = CornerSize(12.dp)),
-                onProgressComplete = {
-                    println("Progress is completed")
-                }
-            )
-        }
     }
 }
