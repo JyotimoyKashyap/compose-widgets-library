@@ -2,6 +2,8 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.jyotimoykashyap/composecomponents?logo=android)](https://search.maven.org/artifact/io.github.jyotimoykashyap/composecomponents)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+![API](https://img.shields.io/badge/API-26%2B-brightgreen.svg?style=flat)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue.svg?logo=kotlin)
 
 A collection of interactive and fun widgets for Jetpack Compose.
 
