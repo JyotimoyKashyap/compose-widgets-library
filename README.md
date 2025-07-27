@@ -1,5 +1,8 @@
 # Compose Widgets Library
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.jyotimoykashyap/composecomponents?logo=android)](https://search.maven.org/artifact/io.github.jyotimoykashyap/composecomponents)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 A collection of interactive and fun widgets for Jetpack Compose.
 
 This repository contains a growing collection of custom widgets that can be easily integrated into your Android projects to create engaging user experiences.
@@ -27,7 +30,7 @@ In your `gradle/libs.versions.toml` file, add the following library definition:
 compose-components = "0.0.2"
 
 [libraries]
-compose-components = { group = "com.github.jyotimoykashyap", name = "composecomponents", version.ref = "compose-components" }
+compose-components = { group = "io.github.jyotimoykashyap", name = "composecomponents", version.ref = "compose-components" }
 ```
 
 Then, in your module-level `build.gradle.kts` file (e.g., `app/build.gradle.kts`), add the dependency:
@@ -44,7 +47,7 @@ In your module-level `build.gradle.kts` file (e.g., `app/build.gradle.kts`), add
 
 ```kotlin
 dependencies {
-    implementation("com.github.jyotimoykashyap:composecomponents:0.0.2")
+    implementation("io.github.jyotimoykashyap:composecomponents:0.0.2")
 }
 ```
 
