@@ -1,11 +1,13 @@
 package com.jyotimoykashyap.composecomponents
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
@@ -166,7 +168,7 @@ private fun DotGridPattern() {
         Surface(
             modifier = Modifier
                 .fillMaxSize(),
-            color = Color.Red
+            color = Color(0xFF673AB7)
         ) {
             Column(
                 modifier = Modifier
@@ -177,9 +179,16 @@ private fun DotGridPattern() {
                         animationDurationMillis = 4000, // Each ripple lasts 4 seconds
                         rippleSpawnIntervalMillis = 1500, // New ripple every 1.5 seconds
                         randomRippleCenter = true // Ripples start from random spots
-                    )
-            ) { }
-            Text(text = "Hello")
+                    ),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Hello",
+                    color = Color.White,
+                    style = MaterialTheme.typography.headlineLarge
+                )
+            }
         }
     }
 }
