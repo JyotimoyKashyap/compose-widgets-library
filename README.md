@@ -9,17 +9,9 @@ A collection of interactive and fun widgets for Jetpack Compose.
 
 This repository contains a growing collection of custom widgets that can be easily integrated into your Android projects to create engaging user experiences.
 
-## Widgets
+## Adding Dependency
 
-### Progress Button
-
-A button that displays a progress animation from left to right, filling the button's shape.
-
-![Progress Button GIF](assets/progressbtnprev.gif)
-
-#### Usage
-
-To use the `ProgressButton` composable, you need to add the dependency to your project.
+To use the composables, you need to add the dependency to your project.
 
 There are two ways to add the dependency:
 
@@ -53,7 +45,18 @@ dependencies {
 }
 ```
 
-Once the dependency is added, you can use the `ProgressButton` in your UI like this:
+Once the dependency is added, you can use the provided composables in your UI like this as shown below.
+
+
+## Widgets
+
+### Progress Button
+
+A button that displays a progress animation from left to right, filling the button's shape.
+
+![Progress Button GIF](assets/progressbtnprev.gif)
+
+#### Usage
 
 ```kotlin
 import com.jyotimoykashyap.composecomponents.ProgressButton
