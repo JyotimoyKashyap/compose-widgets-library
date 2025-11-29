@@ -85,7 +85,7 @@ ProgressButton(
 
 A `Modifier` that applies a dot grid with a propagating ripple animation. This modifier draws a grid of dots over the composable it's applied to. Ripples originate from either the center or random points, expanding outwards and causing the dots they pass over to briefly increase in size. The animation uses a frame-based clock for smooth and reliable updates.
 
-![Rippling Dot Grid GIF](assets/ripplingdotgridprev.gif)
+![Rippling Dot Grid GIF](assets/ripplingDotGrid.gif)
 
 #### Usage
 
